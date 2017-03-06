@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>お手軽reveal.js入門</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/night.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/Zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section ><section data-markdown><script type="text/template">
+
+### 非エンジニアのための
+## お手軽<span style="font-size:125%; color:red">reveal.js</span>入門
+
+</script></section><section data-markdown><script type="text/template">
+
+## 当スライドの対象者
+* プログラミングできない
+* htmlタグも打ったことがない
+* パワポ 飽きた
+* パワポ 面倒
+* なんかカッチョいいスライドを作りたい
+* markdownくらいなら書ける
+
+</script></section><section data-markdown><script type="text/template">
+
+## という
+# 非常に<span style="color:red">ニッチ</span>な<br>
+内容となっています
+
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+## <span style="color:skyblue">reveal.jsとは</span>
+
+**HTMLでスライドを作ることができる**
+
+**↓<br>markdownで作れる**
+
+**↓**<br><span style="font-size: 150%; color:red">**簡単かも！**</span>
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+# 実は
+## そんなに甘くない
+
+</script></section><section data-markdown><script type="text/template">
+
+<span style="font-size: 150%">**reveal.js**</span>は  
+<span style="font-size: 150%">**JavaScript**</span>のライブラリです
+
+</script></section><section data-markdown><script type="text/template">
+
+## なんて言った瞬間
+### 非エンジニアには
+### 何を言っているのか分からなくなる
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+## こんなものを見せようものなら
+
+```
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>Slide 1</section>
+                <section>Slide 2</section>
+            </div>
+        </div>
+
+```
+
+</script></section><section data-markdown><script type="text/template">
+
+<span style="font-size: 150%">**`<section>` 内にmarkdownで<br>
+書いていけばいいんだよ**</span>
+
+なんて言っても
+
+</script></section><section data-markdown><script type="text/template">
+
+# <span style="color:red">無駄</span>
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+### 何もしてない段階で
+# 挫折
+### 間違いなし
+
+</script></section><section data-markdown><script type="text/template">
+
+## 僕たちは
+## いつものように
+
+</script></section><section data-markdown><script type="text/template">
+
+## インストールしたソフトを
+## 立ち上げて使うだけで
+
+</script></section><section data-markdown><script type="text/template">
+
+## 成果物を得たい！
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+# そこで
+
+</script></section><section  data-markdown><script type="text/template">
+
+## 誰にでも
+## reveal.jsを使える環境を
+## 簡単に用意しよう
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+## Visual Studio Code
+### を入手
+
+[https://code.visualsutdio.com](https://code.visualstudio.com)
+
+</script></section><section data-markdown><script type="text/template">
+
+## Visual Studio Code とは
+
+> <div style="text-align: left">Visual Studio Code はオープンソースのソースコードエディタである。マイクロソフトにより開発され、Windows、Linux、macOS上で動作する。</div>
+<span style="font-size: 75%">[*Visual Studio Code - Wikipedia*](https://ja.wikipedia.org/wiki/Visual_Studio_Code)</span>
+
+</script></section><section data-markdown><script type="text/template">
+
+## 簡単に言うと
+### 『メモ帳』の高機能版
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+## VSCode を起動したら
+### 拡張機能を開き『reveal』で検索
+![](./img/reveal04.jpg)
+<span style="font-size: 175%">**vscode-reveal**</span>を**インストールする**
+
+</script></section><section data-markdown><script type="text/template">
+
+## 上手くいかない場合は、
+## 手動でインストール
+
+[こちら](https://evilz.gallery.vsassets.io/_apis/public/gallery/publisher/evilz/extension/vscode-reveal/0.0.9/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage)
+をクリックすると、  
+vsixファイルをダウンロードできます（多分）
+
+参考<br>[VSCodeにオフラインでExtensionを追加する](http://qiita.com/tosier/items/b3b7d42b2580cb63c9ee)
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+# 準備 <span style="color: red ; font-size: 150%">**OK**</span>
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+## では、実際にスライドを<br>作ってみましょう
+
+</script></section><section data-markdown><script type="text/template">
+
+## ツールバーのファイルから<br>新規ファイルを開く
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+## まずはじめに
+## スライドの<span style="color:red">テーマ</span>と<br><span style="color:red">切り替え方</span>を<br>指定します
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+### 具体的には
+
+```
+---  
+  
+theme　: "black"  
+transition　: "default"  
+  
+---  
+```
+↑ このように入力します  
+<div style="text-align: left">**"black"<br>"default"<br>の部分を書き換えることで、設定変更できます**</div>
+
+他にどんな設定があるかは<br>
+[こちら](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal)などを参照
+
+</script></section><section data-markdown><script type="text/template">
+
+```
+---```
+↑ これがページの区切りになるので、忘れずに
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+## ためしに
+```
+---  
+  
+theme　: "black"  
+transition　: "default"  
+  
+---  
+  
+# タイトル  
+  
+---  
+
+## スライド1  
+  
+```
+↑ ここまで入力したら
+
+</script></section><section  data-markdown><script type="text/template">
+
+## 名前をつけて保存
+<span style="font-size: 150%">**『test<span style="color:red">.md</span>』**</span>
+#### 拡張子をつけてmarkdown形式で保存
+
+<span style="font-size: 75%">※ファイル名は任意</span>
+
+</script></section><section  data-markdown><script type="text/template">
+
+### F 1キーを押すと<br>コマンドパレットが開くので
+### 『rev』と入力
+
+![](./img/reveal01.jpg)
+
+**Revealjs: Show presentation by side**をクリック
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+### スライドのプレビューが表示されます
+
+![](./img/reveal02.jpg)
+
+</script></section><section data-markdown><script type="text/template">
+
+<div style="text-align: left; font-size: 150%">
+**theme や  
+transition を書き換えて**<br>
+色々と試してみよう
+</div>
+
+</script></section><section data-markdown><script type="text/template">
+
+## theme
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+
+</script></section><section data-markdown><script type="text/template">
+
+## transition
+<a href="?transition=none#/transitions">None</a> -
+<a href="?transition=fade#/transitions">Fade</a> -
+<a href="?transition=slide#/transitions">Slide</a> -
+<a href="?transition=convex#/transitions">Convex</a> -
+<a href="?transition=concave#/transitions">Concave</a> -
+<a href="?transition=zoom#/transitions">Zoom</a>
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+### ページの区切りを『**`--`**』 にすると
+
+![](./img/reveal03.jpg)
+
+#### スライドを縦に切り替えることができます
+
+</script></section><section  data-markdown><script type="text/template">
+
+## スライドができたら
+
+**F1キーでコマンドパレットを開いて<br>『Revealjs: Open presentation in browser』<br>を実行すれば、ブラウザで開けます**
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+# 以上！
+**あとはmarkdownで<br>ゴリゴリ書き込んでいきましょう**
+
+</script></section><section data-markdown><script type="text/template">
+
+## 慣れてきたら
+## html を使うと表現が広がります
+
+<span style="color:red">**色**</span>  
+`<span style="color:red">色</span>`
+
+<span style="font-size: 150%">**サイズ**</span>  
+`<span style="font-size: 150%">サイズ</span>`
+
+<div style="text-align:left">**左寄せ**</div>
+`<div style="text-align:left">左寄せ</div>`
+
+</script></section><section data-markdown><script type="text/template">
+
+# さらに
+
+<p class="fragment">クリックするとテキストが</p>
+
+<p class="fragment">表示されるようにしたり</p>
+
+</script></section><section data-markdown><script type="text/template">
+
+# こんなことも
+
+<p class="fragment grow">拡大</p>
+<p class="fragment shrink">縮小</p>
+<p class="fragment fade-out">フェードアウト</p>
+<p class="fragment current-visible">1度だけ表示</p>
+<p class="fragment highlight-current-blue">1度だけ青く表示</p>
+<p>ハイライト <span class="fragment highlight-red">赤</span> <span class="fragment highlight-blue">青</span> <span class="fragment highlight-green">緑</span></p>
+
+</script></section><section data-markdown><script type="text/template">
+
+# 詳しくは
+
+公式の[readme](https://github.com/hakimel/reveal.js/blob/master/README.md)を読むのが良いです
+
+[日本語訳](http://qiita.com/hilohiro/items/eab479f6dcf4a100e31b#fragments%E3%83%95%E3%83%A9%E3%82%B0%E3%83%A1%E3%83%B3%E3%83%88)もあります
+
+他、『reveal.js markdown』などでググりましょう
+
+[Qiita](https://qiita.com/) に参考になる記事がたくさんあります
+</script></section></section></div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'plugin/math/math.js', async: true }
+            ];
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default',
+              dependencies: deps
+            };
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+            var options = {
+  "autoSlide": 0,
+  "autoSlideStoppable": true,
+  "backgroundTransition": "default",
+  "center": true,
+  "controls": true,
+  "embedded": false,
+  "fragments": true,
+  "help": true,
+  "hideAddressBar": true,
+  "highlightTheme": "Zenburn",
+  "history": false,
+  "keyboard": true,
+  "loop": false,
+  "mouseWheel": false,
+  "notesSeparator": "note:",
+  "overview": true,
+  "parallaxBackgroundHorizontal": null,
+  "parallaxBackgroundImage": "",
+  "parallaxBackgroundSize": "",
+  "parallaxBackgroundVertical": null,
+  "previewLinks": false,
+  "progress": true,
+  "rtl": false,
+  "separator": "^[\r\n?|\n]---[\r\n?|\n]$",
+  "showNotes": false,
+  "shuffle": false,
+  "slideNumber": false,
+  "theme": "night",
+  "touch": true,
+  "transition": "default",
+  "transitionSpeed": "default",
+  "verticalSeparator": "^[\r\n?|\n]--[\r\n?|\n]$",
+  "viewDistance": 3,
+  "__content": "\r\n\r\n### 非エンジニアのための\r\n## お手軽<span style=\"font-size:125%; color:red\">reveal.js</span>入門\r\n\r\n--\r\n\r\n## 当スライドの対象者\r\n* プログラミングできない\r\n* htmlタグも打ったことがない\r\n* パワポ 飽きた\r\n* パワポ 面倒\r\n* なんかカッチョいいスライドを作りたい\r\n* markdownくらいなら書ける\r\n\r\n--\r\n\r\n## という\r\n# 非常に<span style=\"color:red\">ニッチ</span>な<br>\r\n内容となっています\r\n\r\n\r\n---\r\n\r\n## <span style=\"color:skyblue\">reveal.jsとは</span>\r\n\r\n**HTMLでスライドを作ることができる**\r\n\r\n**↓<br>markdownで作れる**\r\n\r\n**↓**<br><span style=\"font-size: 150%; color:red\">**簡単かも！**</span>\r\n\r\n---\r\n\r\n# 実は\r\n## そんなに甘くない\r\n\r\n--\r\n\r\n<span style=\"font-size: 150%\">**reveal.js**</span>は  \r\n<span style=\"font-size: 150%\">**JavaScript**</span>のライブラリです\r\n\r\n--\r\n\r\n## なんて言った瞬間\r\n### 非エンジニアには\r\n### 何を言っているのか分からなくなる\r\n\r\n---\r\n\r\n## こんなものを見せようものなら\r\n\r\n```\r\n<html>\r\n    <head>\r\n        <link rel=\"stylesheet\" href=\"css/reveal.css\">\r\n        <link rel=\"stylesheet\" href=\"css/theme/white.css\">\r\n    </head>\r\n    <body>\r\n        <div class=\"reveal\">\r\n            <div class=\"slides\">\r\n                <section>Slide 1</section>\r\n                <section>Slide 2</section>\r\n            </div>\r\n        </div>\r\n\r\n```\r\n\r\n--\r\n\r\n<span style=\"font-size: 150%\">**`<section>` 内にmarkdownで<br>\r\n書いていけばいいんだよ**</span>\r\n\r\nなんて言っても\r\n\r\n--\r\n\r\n# <span style=\"color:red\">無駄</span>\r\n\r\n---\r\n\r\n### 何もしてない段階で\r\n# 挫折\r\n### 間違いなし\r\n\r\n--\r\n\r\n## 僕たちは\r\n## いつものように\r\n\r\n--\r\n\r\n## インストールしたソフトを\r\n## 立ち上げて使うだけで\r\n\r\n--\r\n\r\n## 成果物を得たい！\r\n\r\n---\r\n\r\n# そこで\r\n\r\n---\r\n\r\n## 誰にでも\r\n## reveal.jsを使える環境を\r\n## 簡単に用意しよう\r\n\r\n---\r\n\r\n## Visual Studio Code\r\n### を入手\r\n\r\n[https://code.visualsutdio.com](https://code.visualstudio.com)\r\n\r\n--\r\n\r\n## Visual Studio Code とは\r\n\r\n> <div style=\"text-align: left\">Visual Studio Code はオープンソースのソースコードエディタである。マイクロソフトにより開発され、Windows、Linux、macOS上で動作する。</div>\r\n<span style=\"font-size: 75%\">[*Visual Studio Code - Wikipedia*](https://ja.wikipedia.org/wiki/Visual_Studio_Code)</span>\r\n\r\n--\r\n\r\n## 簡単に言うと\r\n### 『メモ帳』の高機能版\r\n\r\n---\r\n\r\n## VSCode を起動したら\r\n### 拡張機能を開き『reveal』で検索\r\n![](./img/reveal04.jpg)\r\n<span style=\"font-size: 175%\">**vscode-reveal**</span>を**インストールする**\r\n\r\n--\r\n\r\n## 上手くいかない場合は、\r\n## 手動でインストール\r\n\r\n[こちら](https://evilz.gallery.vsassets.io/_apis/public/gallery/publisher/evilz/extension/vscode-reveal/0.0.9/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage)\r\nをクリックすると、  \r\nvsixファイルをダウンロードできます（多分）\r\n\r\n参考<br>[VSCodeにオフラインでExtensionを追加する](http://qiita.com/tosier/items/b3b7d42b2580cb63c9ee)\r\n\r\n---\r\n\r\n# 準備 <span style=\"color: red ; font-size: 150%\">**OK**</span>\r\n\r\n---\r\n\r\n## では、実際にスライドを<br>作ってみましょう\r\n\r\n--\r\n\r\n## ツールバーのファイルから<br>新規ファイルを開く\r\n\r\n---\r\n\r\n## まずはじめに\r\n## スライドの<span style=\"color:red\">テーマ</span>と<br><span style=\"color:red\">切り替え方</span>を<br>指定します\r\n\r\n---\r\n\r\n### 具体的には\r\n\r\n```\r\n---  \r\n  \r\ntheme　: \"black\"  \r\ntransition　: \"default\"  \r\n  \r\n---  \r\n```\r\n↑ このように入力します  \r\n<div style=\"text-align: left\">**\"black\"<br>\"default\"<br>の部分を書き換えることで、設定変更できます**</div>\r\n\r\n他にどんな設定があるかは<br>\r\n[こちら](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal)などを参照\r\n\r\n--\r\n\r\n```\r\n---```\r\n↑ これがページの区切りになるので、忘れずに\r\n\r\n---\r\n\r\n## ためしに\r\n```\r\n---  \r\n  \r\ntheme　: \"black\"  \r\ntransition　: \"default\"  \r\n  \r\n---  \r\n  \r\n# タイトル  \r\n  \r\n---  \r\n\r\n## スライド1  \r\n  \r\n```\r\n↑ ここまで入力したら\r\n\r\n---\r\n\r\n## 名前をつけて保存\r\n<span style=\"font-size: 150%\">**『test<span style=\"color:red\">.md</span>』**</span>\r\n#### 拡張子をつけてmarkdown形式で保存\r\n\r\n<span style=\"font-size: 75%\">※ファイル名は任意</span>\r\n\r\n---\r\n\r\n### F 1キーを押すと<br>コマンドパレットが開くので\r\n### 『rev』と入力\r\n\r\n![](./img/reveal01.jpg)\r\n\r\n**Revealjs: Show presentation by side**をクリック\r\n\r\n---\r\n\r\n### スライドのプレビューが表示されます\r\n\r\n![](/img/reveal02.jpg)\r\n\r\n--\r\n\r\n<div style=\"text-align: left; font-size: 150%\">\r\n**theme や  \r\ntransition を書き換えて**<br>\r\n色々と試してみよう\r\n</div>\r\n\r\n--\r\n\r\n## theme\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;\">Black (default)</a> -\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;\">White</a> -\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;\">League</a> -\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;\">Sky</a> -\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;\">Beige</a> -\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;\">Simple</a> <br>\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;\">Serif</a> -\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;\">Blood</a> -\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;\">Night</a> -\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;\">Moon</a> -\r\n<a href=\"#\" onclick=\"document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;\">Solarized</a>\r\n\r\n--\r\n\r\n## transition\r\n<a href=\"?transition=none#/transitions\">None</a> -\r\n<a href=\"?transition=fade#/transitions\">Fade</a> -\r\n<a href=\"?transition=slide#/transitions\">Slide</a> -\r\n<a href=\"?transition=convex#/transitions\">Convex</a> -\r\n<a href=\"?transition=concave#/transitions\">Concave</a> -\r\n<a href=\"?transition=zoom#/transitions\">Zoom</a>\r\n\r\n---\r\n\r\n### ページの区切りを『**`--`**』 にすると\r\n\r\n![](/img/reveal03.jpg)\r\n\r\n#### スライドを縦に切り替えることができます\r\n\r\n---\r\n\r\n## スライドができたら\r\n\r\n**F1キーでコマンドパレットを開いて<br>『Revealjs: Open presentation in browser』<br>を実行すれば、ブラウザで開けます**\r\n\r\n---\r\n\r\n# 以上！\r\n**あとはmarkdownで<br>ゴリゴリ書き込んでいきましょう**\r\n\r\n--\r\n\r\n## 慣れてきたら\r\n## html を使うと表現が広がります\r\n\r\n<span style=\"color:red\">**色**</span>  \r\n`<span style=\"color:red\">色</span>`\r\n\r\n<span style=\"font-size: 150%\">**サイズ**</span>  \r\n`<span style=\"font-size: 150%\">サイズ</span>`\r\n\r\n<div style=\"text-align:left\">**左寄せ**</div>\r\n`<div style=\"text-align:left\">左寄せ</div>`\r\n\r\n--\r\n\r\n# さらに\r\n\r\n<p class=\"fragment\">クリックするとテキストが</p>\r\n\r\n<p class=\"fragment\">表示されるようにしたり</p>\r\n\r\n--\r\n\r\n# こんなことも\r\n\r\n<p class=\"fragment grow\">拡大</p>\r\n<p class=\"fragment shrink\">縮小</p>\r\n<p class=\"fragment fade-out\">フェードアウト</p>\r\n<p class=\"fragment current-visible\">1度だけ表示</p>\r\n<p class=\"fragment highlight-current-blue\">1度だけ青く表示</p>\r\n<p>ハイライト <span class=\"fragment highlight-red\">赤</span> <span class=\"fragment highlight-blue\">青</span> <span class=\"fragment highlight-green\">緑</span></p>\r\n\r\n--\r\n\r\n# 詳しくは\r\n\r\n公式の[readme](https://github.com/hakimel/reveal.js/blob/master/README.md)を読むのが良いです\r\n\r\n[日本語訳](http://qiita.com/hilohiro/items/eab479f6dcf4a100e31b#fragments%E3%83%95%E3%83%A9%E3%82%B0%E3%83%A1%E3%83%B3%E3%83%88)もあります\r\n\r\n他、『reveal.js markdown』などでググりましょう\r\n\r\n[Qiita](https://qiita.com/) に参考になる記事がたくさんあります\r\n"
+};
+            options = extend(defaultOptions, options, queryOptions);
+            Reveal.initialize(options);
+        </script>
+        
+    </body>
+</html>
